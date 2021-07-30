@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Dashboard</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-white border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading text-center"><h4 class="font-weight-bolder text-primary">Easy Dashboard</h4></div>
+      <div class="sidebar-heading"><img class=" img-fluid mx-0 my-0 rounded-circle" src="img/south-park/sp-stan.png" style="max-width: 200px; margin: 5px;"></div>
+      <div class="sidebar-heading text-center"><small class="text-muted" >user</small></div>
+      <ul class="list-group list-group-flush"> 
+        <li>
+          <span class="list-group-item list-group-item-action bg-white text-secondary text-left" >Menu</span>
+        </li>
+        <li>
+          <a href="index.html" class="list-group-item list-group-item-action bg-white text-dark">
+            <i class="fas fa-tachometer-alt"></i>
+            <span class="ml-2">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="tables.html" class="list-group-item list-group-item-action bg-white text-dark">
+            <i class="fas fa-table"></i>
+            <span class="ml-2">Tables</span>
+          </a>
+        </li>
+        <li>
+          <a href="cards.html" class="list-group-item list-group-item-action bg-white text-dark">
+            <i class="fab fa-wpforms"></i>
+            <span class="ml-2">Cards</span>
+          </a>
+        </li>
+        <li>
+          <a href="charts.html" class="list-group-item list-group-item-action bg-white text-dark">
+            <i class="fa fa-chart-bar"></i>
+            <span class="ml-2">Charts</span>
+          </a>
+        </li>
+        <li>
+          <a href="blank.html" class="list-group-item list-group-item-action bg-white text-dark">
+            <i class="far fa-file"></i>
+            <span class="ml-2">Blank</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- End Sidebar -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="btn btn-dark border-secondary" type="button" id="menu-toggle">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active mr-4">
+              <a class="nav-link text-light" href="#"><i class="fas fa-home"></i><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown mr-4">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i></a>
+              <div class="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item text-light" href="login.html">
+                  <i class="fa fa-sign-out-alt" ></i>
+                  <span class="text-left">Logout</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="">
+                  <i class="fa fa-cog text-right" ></i>
+                  <span class="text-left">Config</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--End Navbar-->
+
+      <!--=============================================================================-->
+      <div class="container-fluid">
+        
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb rounded-0 bg-dark mt-4 pb-4 shadow">
+            <li class="breadcrumb-item text-ligt"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item text-light">Cards</li>
+          </ol>
+        </nav>
+        <!-- Breadcrumb -->
+
+        <h2 class="text-primary my-4 font-weight-bold">KPI Cards</h2>
+
+        <!-- kpi  cards-->
+        <div class="row mt-3">
+
+          <div class="col-sm-12 col-md-6 col-lg-3 mt-2">
+            <div class="card bg-dark border-0 rounded-0 shadow">
+              <div class="row no-gutters">
+                <div class="col-lg-4 bg-dark">
+                  <div class="card-body bg-dark text-center">
+                    <h1><i class="fas fa-clock fa-2x text-danger"></i></h1>
+                  </div>
+                </div>
+                <div class="col-lg-8">
+                  <div class="card-body">
+                    <h3 class="card-title text-danger text-center font-weight-bold">24K</h3>
+                    <h6 class="card-subtitle text-light text-center mt-4">KPI DANGER</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-3 mt-2">
+            <div class="card bg-dark border-0 rounded-0 shadow">
+              <div class="row no-gutters">
+                <div class="col-lg-4 bg-dark">
+                  <div class="card-body bg-dark text-center">
+                    <h1><i class="fas fa-briefcase fa-2x text-success"></i></h1>
+                  </div>
+                </div>
+                <div class="col-lg-8">
+                  <div class="card-body">
+                    <h3 class="card-title text-success text-center font-weight-bold">24K</h3>
+                    <h6 class="card-subtitle text-light text-center mt-4">KPI SUCCESS</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-3 mt-2">
+            <div class="card bg-dark border-0 rounded-0 shadow">
+              <div class="row no-gutters">
+                <div class="col-lg-4">
+                  <div class="card-body text-center">
+                    <h1><i class="fas fa-cog fa-2x text-primary"></i></h1>
+                  </div>
+                </div>
+                <div class="col-lg-8">
+                  <div class="card-body">
+                    <h3 class="card-title text-primary text-center font-weight-bold">24K</h3>
+                    <h6 class="card-subtitle text-light text-center mt-4">KPI PRIMARY</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-3 mt-2">
+            <div class="card bg-dark border-0 rounded-0 shadow">
+              <div class="row no-gutters">
+                <div class="col-lg-4 bg-dark">
+                  <div class="card-body text-center">
+                    <h1><i class="fas fa-truck fa-2x text-warning"></i></h1>
+                  </div>
+                </div>
+                <div class="col-lg-8">
+                  <div class="card-body">
+                    <h3 class="card-title text-warning text-center font-weight-bold">24K</h3>
+                    <h6 class="card-subtitle text-light text-center mt-4">KPI WARNING</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- end kpi cards-->
+
+        <h2 class="text-primary my-4 font-weight-bold">Person Cards</h2>
+
+        <!-- Person cards -->
+        <div class="row">
+
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card bg-dark rounded-0 shadow">
+              <img class="card-img-top rounded-0" src="img/south-park/sp-stan.png"/>
+              <div class="card-body rounded-0">
+                <h4 class="card-title text-center text-light font-weight-bold">Stan Marsh</h4>
+                <h6 class="card-subtitle text-center text-light">CEO/Founder</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card bg-dark rounded-0 shadow">
+              <img class="card-img-top rounded-0" src="img/south-park/sp-kyle.png"/>
+              <div class="card-body rounded-0">
+                <h4 class="card-title text-center text-light font-weight-bold">Kyle Broflovsky</h4>
+                <h6 class="card-subtitle text-center text-light">Finances</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card bg-dark rounded-0 shadow">
+              <img class="card-img-top rounded-0" src="img/south-park/sp-eric.png"/>
+              <div class="card-body rounded-0">
+                <h4 class="card-title text-center text-light font-weight-bold">Eric Cartman</h4>
+                <h6 class="card-subtitle text-center text-light">Sales</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card bg-dark rounded-0 shadow">
+              <img class="card-img-top rounded-0" src="img/south-park/sp-kenny.png"/>
+              <div class="card-body rounded-0">
+                <h4 class="card-title text-center text-light font-weight-bold">Kenny McCormick</h4>
+                <h6 class="card-subtitle text-center text-light">Production</h6>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- End person cards -->
+
+
+        <h2 class="text-primary my-4 font-weight-bold">Customer Cards</h2>
+
+        <!-- Customer Cards -->
+        <div class="row mt-3">
+
+          <div class="col-lg-3 mt-2">
+            <div class="card bg-dark rounded-0 shadow">
+              <div class="card-header rounded-0 bg-dark border-0">
+                <div class="row no-gutters">
+                  <div class="col-lg-3">
+                    <h1 class="text-danger"><i class="fab fa-google"></i></h1>
+                  </div>
+                  <div class="col-lg-9">
+                    <h5 class="text-light">Customer Card</h5>
+                  </div>
+                </div>
+              </div>
+                <div class="card-body pt-0">
+                  <p class="card-text">
+                    <i class="fa fa-mobile-alt text-danger mr-2"></i>
+                    <small class="text-light" >XXX-XXX-XXX</small>
+                  </p>
+                  <p class="card-text">
+                    <i class="fa fa-map-marker-alt text-danger mr-2"></i>
+                    <small class="text-light" >Lorem ipsum</small>
+                  </p>
+                  <p class="card-text">
+                    <i class="fa fa-envelope text-danger mr-2"></i>
+                    <small class="text-light" >lorem@ipsum</small>
+                  </p>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 mt-2">
+            <div class="card bg-dark rounded-0 shadow">
+              <div class="card-header rounded-0 bg-dark border-0">
+                <div class="row no-gutters">
+                  <div class="col-lg-3">
+                    <h1 class="text-success"><i class="fab fa-drupal"></i></h1>
+                  </div>
+                  <div class="col-lg-9">
+                    <h5 class="text-light">Customer Card</h5>
+                  </div>
+                </div>
+              </div>
+                <div class="card-body pt-0">
+                  <p class="card-text">
+                    <i class="fa fa-mobile-alt text-success mr-2"></i>
+                    <small class="text-light" >XXX-XXX-XXX</small>
+                  </p>
+                  <p class="card-text">
+                    <i class="fa fa-map-marker-alt text-success mr-2"></i>
+                    <small class="text-light" >Lorem ipsum</small>
+                  </p>
+                  <p class="card-text">
+                    <i class="fa fa-envelope text-success mr-2"></i>
+                    <small class="text-light" >lorem@ipsum</small>
+                  </p>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 mt-2">
+            <div class="card bg-dark rounded-0 shadow">
+              <div class="card-header rounded-0 bg-dark border-0">
+                <div class="row no-gutters">
+                  <div class="col-lg-3">
+                    <h1 class="text-primary"><i class="fab fa-wordpress"></i></h1>
+                  </div>
+                  <div class="col-lg-9">
+                    <h5 class="text-light">Customer Card</h5>
+                  </div>
+                </div>
+              </div>
+                <div class="card-body pt-0">
+                  <p class="card-text">
+                    <i class="fa fa-mobile-alt text-primary mr-2"></i>
+                    <small class="text-light" >XXX-XXX-XXX</small>
+                  </p>
+                  <p class="card-text">
+                    <i class="fa fa-map-marker-alt text-primary mr-2"></i>
+                    <small class="text-light" >Lorem ipsum</small>
+                  </p>
+                  <p class="card-text">
+                    <i class="fa fa-envelope text-primary mr-2"></i>
+                    <small class="text-light" >lorem@ipsum</small>
+                  </p>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 mt-2">
+            <div class="card bg-dark rounded-0 shadow">
+              <div class="card-header rounded-0 bg-dark border-0">
+                <div class="row no-gutters">
+                  <div class="col-lg-3">
+                    <h1 class="text-warning"><i class="fab fa-reddit"></i></h1>
+                  </div>
+                  <div class="col-lg-9">
+                    <h5 class="text-light">Customer Card</h5>
+                  </div>
+                </div>
+              </div>
+                <div class="card-body pt-0">
+                  <p class="card-text">
+                    <i class="fa fa-mobile-alt text-warning mr-2"></i>
+                    <small class="text-light" >XXX-XXX-XXX</small>
+                  </p>
+                  <p class="card-text">
+                    <i class="fa fa-map-marker-alt text-warning mr-2"></i>
+                    <small class="text-light" >Lorem ipsum</small>
+                  </p>
+                  <p class="card-text">
+                    <i class="fa fa-envelope text-warning mr-2"></i>
+                    <small class="text-light" >lorem@ipsum</small>
+                  </p>
+                </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- End Customer cards -->
+
+      </div>
+      <!--=============================================================================-->
+
+    </div>
+
+  </div>
+  <!---->
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+  <script src="js/charts.js"></script>
+
+  <script src="js/menu.js"></script>
+
+</body>
+
+</html>
